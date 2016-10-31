@@ -41,6 +41,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'timtec',
+        'HOST': 'localhost',
+        'USER': 'timtec',
+        'PASSWORD': 'timtec',
     }
 }
 
@@ -515,7 +518,7 @@ TWITTER_ACESS_TOKEN = ''
 TWITTER_ACESS_TOKEN_SECRET = ''
 TWITTER_USER = ''
 
-YOUTUBE_API_KEY = ''
+YOUTUBE_API_KEY = 'AIzaSyD4YUxhSEb3K0JHL3SFDorcuauDTBQnWcY'
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
@@ -598,12 +601,12 @@ STATICFILES_DIRS = (
 )
 
 if DEBUG:
-    MIDDLEWARE_CLASSES += (
-        'debug_toolbar.middleware.DebugToolbarMiddleware',
-    )
-    INSTALLED_APPS += (
-        'debug_toolbar',
-    )
+    # MIDDLEWARE_CLASSES += (
+    #     'debug_toolbar.middleware.DebugToolbarMiddleware',
+    # )
+    # INSTALLED_APPS += (
+    #     'debug_toolbar',
+    # )
     INTERNAL_IPS = ('127.0.0.1', )
 
 # Fix debug toolbar issue: https://github.com/django-debug-toolbar/django-debug-toolbar/issues/521
